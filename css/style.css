@@ -1,0 +1,136 @@
+.shop_img{
+    width: 500px;
+}
+
+.container{
+    margin: auto;
+    width: 1000px;
+    }
+.menu{
+    background: rgb(180, 237, 231, 0.5);
+    width: 140px;
+    padding: 1px;
+}    
+
+.is-active{
+    display: none;
+}
+.nav_list{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 48%;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header{
+    background: rgb(180, 237, 231, 0.5);
+}
+.nav_link{
+    text-decoration: none;
+    color: #1e7767;
+    background-color: rgb(180, 237, 231, 0.5)
+}
+.logo{
+    color: #0e5749;
+    font-size: 20px;
+    background-color: rgb(180, 237, 231, 0.5);
+}
+.btn-menu{
+    color: #1e7767;
+    background-color: #c6f7ee;
+}
+.footer{
+    background: rgb(180, 237, 231, 0.5);
+    padding: 20px;
+
+}
+.main{
+    background:#d5f2ed ;
+    padding: 20px;
+}
+.dark{
+    width: 20px;
+    height: 20px;
+    background: black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.light{
+        width: 20px;
+        height: 20px;
+        background: white;
+        border-radius: 50%;
+        cursor: pointer;
+}
+.burger_line{
+    background: #1e7767;
+    width: 50px;
+    height: 5px;
+    margin-bottom: 5px;
+    transition: 1s;
+}
+.burger{
+    display: none;
+    margin-top: 10px;
+}
+
+@media(max-width:1000px)
+{
+    .nav_list
+    {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        right: -227px;
+        height: 25%;
+        top: 75px;
+        z-index: 2;
+        background:#c6f7ee ;
+        padding: 10px 1;
+        transform: translateX(100%) rotate(400deg); 
+        transition: 1s;
+    }
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+    .container{
+        width: 600px;
+    }
+    .nav-list-active{
+        transform: translateX(0);
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .active .burger_line1{
+        transform: translate(-2px, 9px) rotate(45deg); 
+        transition: 1s;
+    }
+    .active .burger_line2{
+        opacity: 0;
+    }
+    .active .burger_line3{
+        transform: translate(-5px, -10px) rotate(135deg); 
+        transition: 1s;
+    }
+}
+.shop_title{
+    color: #c6f7ee;
+    background-color: rgb(180, 237, 231, 0.5);
+    width: 108px;
+    border: 10px;
+
+}
+.footer_text{
+    color: #c6f7ee;
+    background-color: rgb(180, 237, 231, 0.5);
+    width: 185px;
+    border: 10px;
+}
